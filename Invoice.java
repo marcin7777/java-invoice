@@ -47,8 +47,9 @@ public class Invoice {
 	}
 
 	public BigDecimal getSubtotal() {
-		return null;
+		return subTotal;
 	}
+
 
 	public BigDecimal getTax() {
 		return null;

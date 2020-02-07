@@ -55,7 +55,7 @@ public class Invoice {
 
  	}
 	public BigDecimal getTax() {
-		return null;
+		return tax;
 	}
 
 	public BigDecimal getTotal() {

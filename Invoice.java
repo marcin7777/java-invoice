@@ -69,6 +69,9 @@ public class Invoice {
 	total = total.add(product.getPriceWithTax());
 		}
 	}
+	public static Invoice create() {
+	return new Invoice();
+	}	
 
 }
 

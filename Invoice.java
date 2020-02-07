@@ -23,13 +23,19 @@ public class Invoice {
 	}
 
 
-public void addProduct(Product product) {
+        public void addProduct(Product product) {
 		products.add(Product);
 		update();
 	}
 
 	public void addProduct(Product product, Integer quantity) {
-		// TODO: implement
+		if (quantity <= 0) {
+                     throw new IllegalArgumentException();
+		}
+		for (int i =0; i < quantity; i++) {
+		products.add(product);
+		} 
+		update();
 	}
 
 	public BigDecimal getSubtotal() {

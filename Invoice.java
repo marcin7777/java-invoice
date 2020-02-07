@@ -24,7 +24,8 @@ public class Invoice {
 
 
 public void addProduct(Product product) {
-		// TODO: implement
+		products.add(Product);
+		update();
 	}
 
 	public void addProduct(Product product, Integer quantity) {

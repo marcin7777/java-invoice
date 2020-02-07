@@ -28,7 +28,7 @@ public abstract class Product {
 	}
 
 	public BigDecimal getPrice() {
-		return null;
+		return price;
 	}
 
 	public BigDecimal getTaxPercent() {

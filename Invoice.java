@@ -7,6 +7,7 @@ import java.util.Collection;
 
 import pl.edu.agh.mwo.invoice.product.Product;
 
+
 public class Invoice {
 	private Collection<Product> products;
 	private BigDecimal netValue;
@@ -36,6 +37,13 @@ public class Invoice {
 		products.add(product);
 		} 
 		update();
+	}
+        public void setNetValue() {
+
+        netValue = BigDecimal.ZERO;
+	for (Product product: products) {
+		netValue = netValue.add(product.getPrice());
+		}
 	}
 
 	public BigDecimal getSubtotal() {

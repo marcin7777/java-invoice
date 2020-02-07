@@ -59,7 +59,7 @@ public class Invoice {
 	}
 
 	public BigDecimal getTotal() {
-		return null;
+		return total;
 	}	
 }
 

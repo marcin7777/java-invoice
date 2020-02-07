@@ -50,7 +50,10 @@ public class Invoice {
 		return subTotal;
 	}
 
+	public void setTax() {
+         tax =  total.subtract(subTotal);
 
+ 	}
 	public BigDecimal getTax() {
 		return null;
 	}

@@ -10,7 +10,7 @@ import pl.edu.agh.mwo.invoice.product.Product;
 
 public class Invoice {
 	private Collection<Product> products;
-	private BigDecimal netValue;
+	private BigDecimal subTotal;
 	private BigDecimal total;
 	private BigDecimal tax;
 
@@ -38,11 +38,11 @@ public class Invoice {
 		} 
 		update();
 	}
-        public void setNetValue() {
+        public void setSubTotal() {
 
-        netValue = BigDecimal.ZERO;
+        subTotal = BigDecimal.ZERO;
 	for (Product product: products) {
-		netValue = netValue.add(product.getPrice());
+		subTotal = subTotal.add(product.getPrice());
 		}
 	}
 

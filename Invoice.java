@@ -1,16 +1,29 @@
 package pl.edu.agh.mwo.invoice;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
 
 import pl.edu.agh.mwo.invoice.product.Product;
 
 public class Invoice {
-	private Map<Product,Integer> products = new HashMap<>();
+	private Collection<Product> products;
+	private BigDecimal netValue;
+	private BigDecimal total;
+	private BigDecimal tax;
 
-	public void addProduct(Product product) {
+	
+	Invoice() {
+		netValue = new BigDecimal("0");
+		total = new BigDecimal("0");
+		tax = new BigDecimal("0");
+		products = new ArrayList<Product>();
+
+	}
+
+
+public void addProduct(Product product) {
 		// TODO: implement
 	}
 
@@ -28,6 +41,6 @@ public class Invoice {
 
 	public BigDecimal getTotal() {
 		return null;
-	}
+	}	
 }
 

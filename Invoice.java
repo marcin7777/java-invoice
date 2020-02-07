@@ -72,6 +72,11 @@ public class Invoice {
 	public static Invoice create() {
 	return new Invoice();
 	}	
-
+        
+        public void update() {
+	setSubtotal();
+	setTotal();
+	setTax();
+	}
 }
 
